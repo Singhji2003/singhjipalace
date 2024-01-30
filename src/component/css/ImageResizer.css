@@ -1,0 +1,91 @@
+/* ImageResizer.css */
+
+
+.image-resizer-container h1 {
+  text-align: center;
+  color: #081B29;
+}
+.input-image-container{
+  width: 40%;
+  box-shadow: 0px 0px 8px #1A7E90;
+  background: #1A7E90;
+  color: white;
+  border: 1px solid rgb(231 233 245);
+  height: 10rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.3rem auto; 
+}
+.input-image-container label a{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.image-resizer-container input{
+  display: none;
+}
+
+.image-review-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.original-image-review{
+  width: 40rem;
+  display: flex;
+  gap:1rem;
+}
+.settingResolution input{
+  display: block;
+  height: 2rem;
+  width: 9rem;
+  outline: none;
+}
+.resolution-input{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.settingResolution{
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+.inputs-resolutions{
+  display: flex;
+  gap: 5px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.download-btn {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.apply-resolution button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

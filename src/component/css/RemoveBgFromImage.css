@@ -1,0 +1,23 @@
+.original-image-withBG {
+    width: 30rem;
+    margin: 2rem;
+}
+
+.remove-bg button {
+    display: block;
+    /* margin-top: 33px; */
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-remove-bg{
+    margin: auto;
+}
+.image-review-container-for-bgremover{
+    justify-content: space-between;
+}

@@ -1,0 +1,32 @@
+.comming-soon{
+    box-shadow: 0px 0px 5px white;
+    width: 40%;
+    padding: 1rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 990;
+    margin: auto;
+    position: fixed;
+    left: 30% ;
+    top: 30%;
+    height: 10rem;
+    background-color: #1A7E90;
+    border-radius: 5px;
+    color: white;
+}
+.comming-soon button{
+    width: 7rem;
+    margin:   auto;
+    height: 1.6rem;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #081B29;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+.comming-soon button:hover{
+    box-shadow: 0px 0px 5px white;
+}

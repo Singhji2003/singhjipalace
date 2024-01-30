@@ -1,0 +1,19 @@
+.home-about-right-content img{
+    width: 28rem;
+}
+.home-about-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    color: #1a3e58;
+}
+.home-about-left-content p{
+    font-size: 1.1em;
+}
+.home-about-left-content{
+    width: 40rem;
+    line-height: 1.7rem;
+}
+.home-about-left-content h2{
+    margin-top: 1rem;
+}

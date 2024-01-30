@@ -1,0 +1,80 @@
+.contact-home-heading{
+    text-align: center;
+    color: #081B29;
+
+}
+.home-contact-form{
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    background-color: #1A7E90;
+    margin-top: 1rem;
+}
+.home-contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+}
+.home-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+    justify-content: center;
+    margin: auto;
+    text-align: left;
+}
+.home-inputs input{
+    width: 20rem;
+    outline: none;
+    height: 1.6rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.home-inputs textarea{
+    width: 20rem;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.home-inputs label{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.home-contact-form-button{
+    display: flex;
+    margin: auto;
+    gap: 2rem;
+}
+.home-inputs input:focus, .home-inputs textarea:focus{
+    background-color: white;
+    box-shadow: 0 0 1rem white;
+}
+.home-contact-form-button button{
+   
+    width: 7rem;
+    background-color: white;
+    border: none;
+    color: #081B29;
+    font-size: 1.1em;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+
+
+@media screen and (maxwidth:800px) {
+    .home-contact-form {    
+        width: 74%;
+    }
+}
