@@ -19,9 +19,6 @@ const Home = () => {
       setTimeout(() => {
         animateText.textContent = "Image Resizer"
       }, 9000)
-      setTimeout(() => {
-        animateText.textContent = "Stress Relaeses Games"
-      }, 12000)
     }
     textChange();
     setInterval(textChange, 12000)
@@ -49,7 +46,7 @@ const Home = () => {
     <div className="home-page">
       <div className="left-home">
         <div className="hii-heading">
-          Hiiii.... 🖐🖐🖐🖐
+          Hii... 🖐🖐🖐🖐
         </div>
         <div className="welcome-heading">
           Welcome to Singh Ji Palace

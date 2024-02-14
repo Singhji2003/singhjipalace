@@ -15,6 +15,12 @@ const Services = (props) => {
         </div>
         <div className="service-content">
           <div className="each-service">
+            <img src={require('../Image/web_builder.png')} alt="" />
+            <h1>Website Builder</h1>
+            <p>Welcome to Singh Ji Palace, where we transform your vision into a stunning online reality! As a premier website building service, we understand the importance of a strong online presence in today's digital world. Whether you're a budding entrepreneur, a small business owner, or a creative professional. </p>
+            <Link to='/web-builder'><button >Explore Now</button></Link>
+          </div>
+          <div className="each-service">
             <img src={require('../Image/speech-to-text.png')} alt="" />
             <h1>Speech To text</h1>
             <p>Introducing Singh Ji Palace, where we empower you to transcribe spoken words into written text effortlessly with our state-of-the-art Speech-to-Text (STT) solutions. Experience a seamless conversion process that transforms spoken language into accurate, editable text, providing unparalleled convenience and efficiency.</p>

@@ -32,13 +32,14 @@ const SpeechToText = () => {
                 <h1>Speech to Text Converter</h1>
                 <br />
                 <p>Here you have to just speeck after the click on Start Listening. It automatically type the content you will say...</p>
+                <div className="speech-to-text-box">
                 <div className="emoji-speech-to-text">
                     {listening ? <img src={require('../Image/listening.gif')} /> : <img src={require('../Image/done.gif')} />}
                 </div>
                 <div className="speech-to-text-main-content">
                     {transcript}
                 </div>
-
+                </div>
                 <div className="speech-to-text-btn-style">
 
                     <button onClick={handleCopyToClipboard} disabled={!transcript?true:false}>

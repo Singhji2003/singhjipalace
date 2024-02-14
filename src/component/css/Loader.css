@@ -1,9 +1,10 @@
-.loader{
-    position: sticky;
+.loader {
+    position: fixed;
     top: 40%;
     margin-left: 45%;
 }
-.loader img{
+
+.loader img {
     width: 10rem;
-    
+
 }

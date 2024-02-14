@@ -18,7 +18,7 @@ const RemoveBgFromImage = () => {
     formData.append("image_file", selectedImage);
     formData.append("size", "auto");
 
-    const api_key = "GHtCcVR6toqXe3KwfYwSuryk";
+    const api_key = "MDx62uPJvekoUWyb3dsZgaXM";
 
 
     // send to the server
@@ -55,8 +55,9 @@ const RemoveBgFromImage = () => {
       onDrop={handleDrop}
       onDragOver={(e) => e.preventDefault()}
     >
-     {isUpload && <Loader/>}
+      {isUpload && <Loader />}
       <h1>Remove BackGround From Image</h1>
+      <p>In this palace you have to just choose the Image and we will remove the whole BackGround and will make it downloadable.</p>
       <div className="input-image-container">
         <label htmlFor="input-image"><a>Choose Image</a> Or Just Drag and Drop Image</label>
         <input type="file" name="input-image" id="input-image" onChange={handleImageChange} accept="image/*" />
@@ -89,7 +90,7 @@ const RemoveBgFromImage = () => {
               <h3>New Image Without BackGrund</h3>
               <img src={finalUrl} alt="Resized" className="original-image-withBG" />
               <button className="download-btn" onClick={handleDownload} >
-                
+
                 Download New Image
               </button>
             </div>

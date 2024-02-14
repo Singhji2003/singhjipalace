@@ -33,10 +33,10 @@ const TextToSpeech = () => {
     setText(e.target.value);
   };
 
-  const handleSpeak = () => {
+  const handleSpeak = async () => {
     const synth = window.speechSynthesis;
     const utterance = new SpeechSynthesisUtterance(text);
-    
+
     if (selectedVoice) {
       utterance.voice = selectedVoice;
     }
@@ -52,8 +52,12 @@ const TextToSpeech = () => {
 
   return (
     <div className="text-to-speech-app-container">
-      <ScrollToTop/>
+      <ScrollToTop />
       <h1>Text to Speech</h1>
+      <p>This is the palace where you have to just type and then select the particular voice channel and then click on speak and Listen the words that you have typed...</p>
+      {/* <div className="talking-robot">
+        <img src={require('../Image/robot.gif')} alt="" />
+      </div> */}
       <textarea
         placeholder="Enter text..."
         value={text}
@@ -79,7 +83,7 @@ const TextToSpeech = () => {
         </button>
         <button disabled>Download Speech</button>
       </div>
-    </div>
+    </div >
   );
 };
 

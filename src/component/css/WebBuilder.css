@@ -1,0 +1,64 @@
+.web-building-header h1 {
+    text-align: center;
+    color: #081B29;
+}
+
+.web-building-content {
+    display: flex;
+    margin: 2rem;
+    gap: 20px;
+    align-items: center;
+}
+
+.web-building-left-content h1 {
+    color: #081B29;
+    font-size: 2em;
+}
+
+.web-building-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.web-building-left-content button {
+    width: 15rem;
+    margin: 2rem;
+    height: 2rem;
+    background-color: #081B29;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.web-building-left-content button a {
+    text-decoration: none;
+    color: white;
+}
+
+.quote-material {
+    height: 20rem;
+    background-color: #119FD5;
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quote-material i {
+    font-size: 3em;
+}
+
+.quote-material p {
+    font-size: 1.4em;
+    width: 60vw;
+}
+
+.web-building-right-content img {
+    width: 45vw;
+    border-radius: 10px;
+}

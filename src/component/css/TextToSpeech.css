@@ -1,61 +1,89 @@
+.text-to-speech-app-container {
+  text-align: center;
+}
 
-  .text-to-speech-app-container {
-    text-align: center;
-  }
-  .text-to-speech-app-container h1{
-    text-align: center;
-    color: #081B29;
-  }
-  
- .text-to-speech-app-container  textarea {
-    width: 60%;
-    height: 18rem;
+.text-to-speech-app-container h1 {
+  text-align: center;
+  color: #081B29;
+}
 
-    box-shadow: 0px 0px 8px #1A7E90;
-    background: #1A7E90;
-    color: white;
-    border: 1px solid rgb(231 233 245);
-    margin: 1.2rem 0;
-    font-size: 1.1em;
-    padding: 5px 10px;
-    outline: none;
-    resize: none;
+.text-to-speech-app-container textarea {
+  width: 60%;
+  height: 18rem;
+  /* z-index: 1; */
+  position: relative;
+  box-shadow: 0px 0px 8px #1A7E90;
+  background: #1A7E90;
+  color: white;
+  border: 1px solid rgb(231 233 245);
+  margin: 1.2rem 0;
+  font-size: 1.1em;
+  padding: 5px 10px;
+  outline: none;
+  resize: none;
+}
+
+.text-to-speech-app-container textarea::placeholder {
+  color: white;
+}
+
+.text-to-speech-app-container button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.text-to-speech-app-container button:hover {
+  background-color: #45a049;
+}
+
+.text-to-speech-app-container .button-container {
+  margin-top: 10px;
+}
+
+.text-to-speech-app-container audio {
+  margin-top: 20px;
+}
+
+.voice-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.voice-container label {
+  font-weight: 500;
+}
+
+.button-container button:disabled {
+  cursor: not-allowed;
+}
+
+@media screen and (max-width:500px) {
+  .text-to-speech-app-container textarea {
+    width: 80%;
   }
-  
-  .text-to-speech-app-container textarea::placeholder{
-    color: white;
-  }
-  .text-to-speech-app-container button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-  }
-  
- .text-to-speech-app-container  button:hover {
-    background-color: #45a049;
-  }
-  
-  .text-to-speech-app-container .button-container {
-    margin-top: 10px;
-  }
-  
- .text-to-speech-app-container audio {
-    margin-top: 20px;
-  }
-  
-  .voice-container {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  .voice-container label{
-    font-weight: 500;
-  }
-  .button-container button:disabled{
-    cursor: not-allowed;
-  }
+}
+
+.talking-robot {
+  position: absolute;
+}
+
+.talking-robot img {
+  width: 40%;
+  margin-left: -60%;
+  z-index: -1;
+  /* display: none; */
+}
+
+.text-to-speech-app-container p {
+  width: 55%;
+  font-size: 1.2em;
+  text-align: center;
+  margin: auto;
+}

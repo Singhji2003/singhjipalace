@@ -5,7 +5,8 @@
   text-align: center;
   color: #081B29;
 }
-.input-image-container{
+
+.input-image-container {
   width: 40%;
   box-shadow: 0px 0px 8px #1A7E90;
   background: #1A7E90;
@@ -16,13 +17,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1.3rem auto; 
+  margin: 1.3rem auto;
 }
-.input-image-container label a{
+
+.input-image-container label a {
   cursor: pointer;
   text-decoration: underline;
 }
-.image-resizer-container input{
+
+.image-resizer-container input {
   display: none;
 }
 
@@ -33,28 +36,32 @@
   margin: 2rem;
 }
 
-.original-image-review{
+.original-image-review {
   width: 40rem;
   display: flex;
-  gap:1rem;
+  gap: 1rem;
 }
-.settingResolution input{
+
+.settingResolution input {
   display: block;
   height: 2rem;
   width: 9rem;
   outline: none;
 }
-.resolution-input{
+
+.resolution-input {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.settingResolution{
+
+.settingResolution {
   display: flex;
   margin-top: 2rem;
   flex-direction: column;
 }
-.inputs-resolutions{
+
+.inputs-resolutions {
   display: flex;
   gap: 5px;
 }
@@ -78,6 +85,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
 .apply-resolution button {
   display: block;
   margin-top: 10px;
@@ -89,3 +97,9 @@
   cursor: pointer;
 }
 
+.image-resizer-container p {
+  font-size: 1.2em;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}

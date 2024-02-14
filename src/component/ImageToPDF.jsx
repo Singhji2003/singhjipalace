@@ -72,6 +72,7 @@ const ImageToPDF = () => {
             <div className="image-to-pdf-container">
                 <div className="image-to-pdf-heading">
                     <h1>Image to PDF Convertor</h1>
+                    <p>In this palace you have to just choose the photos and we will make a page for each image and make a whole pdf and will make it downloadable.</p>
                 </div>
 
                 <div className="image-to-pdf-card">

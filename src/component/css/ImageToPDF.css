@@ -1,8 +1,9 @@
-.image-to-pdf-heading{
+.image-to-pdf-heading {
     text-align: center;
     color: #081B29
 }
-.image-to-pdf-card{
+
+.image-to-pdf-card {
     padding: 20px;
     border: 1px solid black;
     border-radius: 5px;
@@ -11,27 +12,29 @@
     width: 70%;
 }
 
-[type="file"]{
+[type="file"] {
     color: #878787;
 }
-[type="file"]::-webkit-file-upload-button{
+
+[type="file"]::-webkit-file-upload-button {
     background-color: red;
     border: 2px solid red;
     border-radius: 4px;
-    color:white;
+    color: white;
     cursor: pointer;
-    font-size: 12px ;
+    font-size: 12px;
     outline: none;
     padding: 10px 25px;
     transition: all 1s ease;
 }
-[type="file"]::-webkit-file-upload-button:hover{
+
+[type="file"]::-webkit-file-upload-button:hover {
     background-color: white;
     border: 2px solid black;
     color: black;
 }
 
-.image-to-pdf-button-convert{
+.image-to-pdf-button-convert {
     padding: 10px 25px;
     border-radius: 8px;
     background-color: blue;
@@ -40,16 +43,25 @@
     color: white;
     border: 2px solid white;
 }
-.image-to-pdf-button-convert:hover{
+
+.image-to-pdf-button-convert:hover {
     background-color: white;
     border: 2px solid black;
     color: black;
     transition: all 1s ease;
 }
-.image-to-pdf-container{
+
+.image-to-pdf-container {
     display: flex;
     flex-direction: column;
     margin: auto;
     align-items: center;
     gap: 2rem;
+}
+
+.image-to-pdf-heading p {
+    width: 50%;
+    font-size: 1.2em;
+    margin: auto;
+    margin-top: 10px;
 }

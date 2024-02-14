@@ -95,12 +95,32 @@
 
 
 @media screen and (max-width:770px) {
-  .home-page{
+  .home-page {
     flex-direction: column-reverse;
     height: 100%;
     padding: 2rem;
   }
+
   .home-about-left-content {
     width: 86vw;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .right-home img {
+    width: 70vw;
+    height: auto;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+  .welcome-heading {
+    font-size: 1.3em;
+  }
+
+  .services-home-heading .services-home-content {
+    font-size: 1.8em;
   }
 }
