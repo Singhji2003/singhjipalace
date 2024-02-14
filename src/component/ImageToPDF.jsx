@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import './css/ImageToPDF.css'
 import { Document, Page, Image, pdf, StyleSheet } from '@react-pdf/renderer';
 import { saveAs } from 'file-saver';
+import ScrollToTop from './ScrollToTop';
 const styles = StyleSheet.create({
     image: {
         padding: 15,
@@ -69,6 +70,7 @@ const ImageToPDF = () => {
     }
     return (
         <>
+        <ScrollToTop/>
             <div className="image-to-pdf-container">
                 <div className="image-to-pdf-heading">
                     <h1>Image to PDF Convertor</h1>

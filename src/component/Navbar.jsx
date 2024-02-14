@@ -30,8 +30,8 @@ const Navbar = (props) => {
                     <li onClick={hideNav}><Link to="/contact">Feedback</Link></li>
                 </ul>
                 <div className="nav-responsive">
-                    <li id='hamberger' onClick={showNav}><i class="fa-solid fa-bars"></i></li>
-                    <li id='close' onClick={hideNav}><i class="fa-solid fa-xmark"></i></li>
+                    <li id='hamberger' onClick={showNav}><i className="fa-solid fa-bars"></i></li>
+                    <li id='close' onClick={hideNav}><i className="fa-solid fa-xmark"></i></li>
                 </div>
             </div>
         </nav>

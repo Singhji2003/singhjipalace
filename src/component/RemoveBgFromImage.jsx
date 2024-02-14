@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './css/RemoveBgFromImage.css'
 import axios from 'axios';
 import Loader from './Loader';
+import ScrollToTop from './ScrollToTop';
 const RemoveBgFromImage = () => {
   const [Image, setImage] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -50,6 +51,8 @@ const RemoveBgFromImage = () => {
     downloadLink.click();
   };
   return (
+    <>
+    <ScrollToTop/>
     <div
       className="image-resizer-container"
       onDrop={handleDrop}
@@ -98,6 +101,7 @@ const RemoveBgFromImage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

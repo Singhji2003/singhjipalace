@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './css/Home.css'
+import ScrollToTop from './ScrollToTop'
 const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -44,6 +45,7 @@ const Home = () => {
 
   return (
     <div className="home-page">
+      <ScrollToTop/>
       <div className="left-home">
         <div className="hii-heading">
           Hii... 🖐🖐🖐🖐

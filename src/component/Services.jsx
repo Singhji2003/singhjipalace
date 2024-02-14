@@ -8,8 +8,8 @@ const Services = (props) => {
   }
   return (
     <>
+      <ScrollToTop />
       <div className="services">
-        <ScrollToTop />
         <div className="service-heading">
           <h1><i class="fa-solid fa-briefcase"></i>Services</h1>
         </div>

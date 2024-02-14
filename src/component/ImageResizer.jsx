@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Resizer from 'react-image-file-resizer';
 import './css/ImageResizer.css';
+import ScrollToTop from './ScrollToTop';
 
 const ImageResizer = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -46,6 +47,8 @@ const ImageResizer = () => {
   };
 
   return (
+    <>
+    <ScrollToTop/>
     <div
       className="image-resizer-container"
       onDrop={handleDrop}
@@ -102,6 +105,7 @@ const ImageResizer = () => {
     </div>
   </div>
     </div >
+    </>
   );
 };
 

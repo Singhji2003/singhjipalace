@@ -3,30 +3,33 @@
     color: #081B29
 }
 
-.contact-form{
+.contact-form {
     width: 40%;
     margin: 1rem auto;
     border-radius: 5px;
     background-color: #1A7E90;
 }
-.contact-form form{
+
+.contact-form form {
     display: flex;
     padding: 1rem;
     flex-direction: column;
-   align-items: center;
-   gap: 10px;
-   margin: rem;
+    align-items: center;
+    gap: 10px;
+    margin: rem;
 }
-.contact-form form .inputs{
+
+.contact-form form .inputs {
     display: flex;
     flex-direction: column;
     gap: 6px;
     width: 20rem;
     justify-content: center;
     font-size: 1.2em;
-    color:white;
+    color: white;
 }
-.inputs input{
+
+.inputs input {
     width: 20rem;
     outline: none;
     height: 1.6rem;
@@ -36,7 +39,8 @@
     padding-left: 10px;
     font-weight: 500;
 }
-.inputs textarea{
+
+.inputs textarea {
     width: 20rem;
     outline: none;
     border-radius: 5px;
@@ -45,16 +49,18 @@
     padding-left: 10px;
     font-weight: 500;
 }
-.inputs label{
+
+.inputs label {
     font-weight: 600;
 }
 
-.contact-form-button{
+.contact-form-button {
     display: flex;
     margin: 1rem auto;
     gap: 2rem;
 }
-.contact-form-button button{
+
+.contact-form-button button {
     width: 7rem;
     background-color: white;
     border: none;
@@ -64,7 +70,53 @@
     cursor: pointer;
     font-weight: 600;
 }
-.inputs input:focus, .inputs textarea:focus{
+
+.inputs input:focus,
+.inputs textarea:focus {
     background-color: white;
     box-shadow: 0 0 1rem white;
+}
+
+@media screen and (maxwidth:800px) {
+    .contact-form {
+        width: 74%;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .contact-form {
+        width: 62%;
+    }
+
+    .inputs input {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .inputs textarea {
+        width: 45vw
+    }
+}
+
+@media screen and (max-width:500px) {
+    .contact-form-button {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 82%;
+    }
+
+    .inputs textarea {
+        width: 66vw;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .contact-form form .inputs {
+        width: auto;
+    }
 }
