@@ -21,6 +21,12 @@ const Services = (props) => {
             <Link to='/web-builder'><button >Explore Now</button></Link>
           </div>
           <div className="each-service">
+            <img src={require('../Image/speed-typing-test.webp')} alt="" />
+            <h1>Typing Test</h1>
+            <p>Welcome to Singh Ji Palace, where we you can test your typing skills effectively in minimal to minimal time. Here is the very simple way to  test your typing speed in which there will be very short paragraphs or we can say quotes and type the exactly sames quotes to gather the best result. It will be very simple way to use it. </p>
+            <Link to='/typing-test'><button >Explore Now</button></Link>
+          </div>
+          <div className="each-service">
             <img src={require('../Image/speech-to-text.png')} alt="" />
             <h1>Speech To text</h1>
             <p>Introducing Singh Ji Palace, where we empower you to transcribe spoken words into written text effortlessly with our state-of-the-art Speech-to-Text (STT) solutions. Experience a seamless conversion process that transforms spoken language into accurate, editable text, providing unparalleled convenience and efficiency.</p>

@@ -17,6 +17,7 @@ import RemoveBgFromImage from './component/RemoveBgFromImage';
 import WebBuilder from './component/WebBuilder';
 import Alert from './component/Alert';
 import WebContacting from './component/WebContacting';
+import TypingTest from './component/TypingTest';
 const App = () => {
   const [commingSoon, setCommingSoon] = useState(false)
   const [alert, setAlert] = useState('')
@@ -53,7 +54,7 @@ const App = () => {
           <Route index element={<HomePage commingSoon={setCommingSoon} showAlert={showAlert} />} />
           <Route exact path="/services" element={<Services commingSoon={setCommingSoon} />} />
           <Route exact path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact showAlert={showAlert}/>} />
+          <Route path="/contact" element={<Contact showAlert={showAlert} />} />
           <Route path="/words-solution" element={<WordsSolution />} />
           <Route path="/text-to-speech" element={<TextToSpeech />} />
           <Route path="/image-resizer" element={<ImageResizer />} />
@@ -61,7 +62,8 @@ const App = () => {
           <Route path="/images-to-pdf" element={<ImageToPDF />} />
           <Route path="/remove-bg-from-image" element={<RemoveBgFromImage />} />
           <Route path="/web-builder" element={<WebBuilder />} />
-          <Route path="/web-builder/web-contacting-form" element={<WebContacting showAlert={showAlert}/>} />
+          <Route path="/typing-test" element={<TypingTest />} />
+          <Route path="/web-builder/web-contacting-form" element={<WebContacting showAlert={showAlert} />} />
         </Routes>
         <Footer />
       </BrowserRouter>
