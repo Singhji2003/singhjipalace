@@ -84,7 +84,7 @@ const ImageResizer = () => {
           </div>
           <div className="apply-resolution">
             <button type='submit' onClick={(e) => {
-              e.preventDefault();
+              e.preventDefault()
               handleImage(image);
             }} >Apply</button>
           </div>

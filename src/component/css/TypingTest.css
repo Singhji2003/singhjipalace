@@ -20,6 +20,17 @@
     border: none;
     border-radius: 5px;
     color: white;
+    border-top-left-radius: 0px;
+}
+
+.typing-test-heading p {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.typing-test-area textarea::placeholder {
+    color: rgba(255, 255, 255, 0.87);
 }
 
 .typing-test-heading h1 {
@@ -41,4 +52,45 @@
 
 .typing-test-btn button:disabled {
     cursor: not-allowed;
+}
+
+.given-text {
+    font-size: 1.2em;
+    color: white;
+    border-radius: 10px;
+    background-color: #1A7E90;
+}
+
+#score-board {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.typing-test-area {
+    position: relative;
+
+}
+
+
+.timer-shown {
+    position: absolute;
+    float: right;
+    left: -57px;
+    background-color: #1A7E90;
+    color: white;
+    font-weight: 500;
+    height: 3rem;
+    width: 3em;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    /* border-radius: 50%; */
+    align-items: center;
+    top: 0rem;
+}
+
+.timer-shown img {
+    width: 2rem;
+    margin-left: -4rem;
+    margin-right: 2rem;
 }

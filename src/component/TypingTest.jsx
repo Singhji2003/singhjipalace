@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import './css/TypingTest.css';
-
+import ScrollToTop from './ScrollToTop'
 const TypingTest = () => {
+
     const [clientText, setCleintText] = useState('');
     const [start, setStart] = useState(false);
     const [startTime, setStartTime] = useState(0);
+    const [shownTime, setShwonTime] = useState(0);
+    const [timerInterval, setTimerInterval] = useState(null);
     const [correctWords, setCorrectWords] = useState(0);
+
+    // The default text that will generate randomly
     const defaultText = [
         'The future belongs to those who believe in the beauty of their dreams.',
         `In the end, it's not the years in your life that count. It's the life in your years.`,
@@ -19,15 +24,28 @@ const TypingTest = () => {
         'The only way to achieve the impossible is to believe it is possible.'
     ];
 
+    // Checking the eaxctly typed correct words
+    const writtenCorrectWords = (clientWord) => {
+        let score = 0;
+        const defaultText = document.getElementById('show-text').innerHTML.split(" ")
+        for (let i = 0; i < clientWord.length; i++) {
+            if (clientWord[i] == defaultText[i]) {
+                score++;
+            }
+        }
+        return score;
+    }
+
+    // Calculating the typing speed 
     const calculateTypingSpeed = (time_taken) => {
         let totalWords = clientText.trim();
         let actualWords = totalWords === '' ? 0 : totalWords.split(" ").length;
-
+        let actualSentance = totalWords === '' ? 0 : totalWords.split(" ");
+        let correctWordScore = writtenCorrectWords(actualSentance)
         if (actualWords !== 0) {
             let typingSpeed = (actualWords / time_taken) * 60;
             typingSpeed = Math.round(typingSpeed);
-            let accuracy = ((correctWords / actualWords) * 100).toFixed(2);
-            document.getElementById('score-board').innerHTML = `Your typing speed is ${typingSpeed} words per minute. Accuracy: ${accuracy}%`;
+            document.getElementById('score-board').innerHTML = `Your typing speed is ${typingSpeed} words per minute. You typed ${correctWordScore} Correct Words out of ${document.getElementById('show-text').innerHTML.split(" ").length} Words in ${time_taken} sec. `
         } else {
             document.getElementById('score-board').innerHTML = `Your typing speed is 0 words per minute. Accuracy: 0%`;
         }
@@ -39,6 +57,7 @@ const TypingTest = () => {
         calculateTypingSpeed((date.getTime() - startTime) / 1000);
         document.getElementById('show-text').innerHTML = "";
         setCleintText('');
+
     }
 
     const startTyping = () => {
@@ -48,6 +67,7 @@ const TypingTest = () => {
         let date = new Date();
         setStartTime(date.getTime());
         document.getElementById('test-button').innerText = "Done";
+
     }
 
     const testStatus = () => {
@@ -55,14 +75,17 @@ const TypingTest = () => {
             case "start":
                 setStart(true);
                 startTyping();
+                timershown();
                 break;
 
             case "done":
                 setStart(false);
                 endTypingTest();
+                timershown();
                 break;
         }
     }
+
 
     const handleTyping = (e) => {
         const { value } = e.target;
@@ -76,14 +99,32 @@ const TypingTest = () => {
         setCleintText(value);
     }
 
+    
+    const timershown = () => {
+        if (document.getElementById('test-button').innerText === "Done") {
+            let elapsed = 0;
+            setShwonTime(0);
+            const interval = setInterval(() => {
+                elapsed++;
+                setShwonTime(elapsed);
+            }, 1000);
+            setTimerInterval(interval);
+        } else {
+            clearInterval(timerInterval);
+        }
+    }
+
     return (
         <>
+            <ScrollToTop />
             <div className='typing-test'>
                 <div className="typing-test-heading">
                     <h1>Singh Typing Test</h1>
+                    <p>To test your typing speed click on the start button and then you can see the quotes above the box just start typing the quotes and when it is finished click on done and then we will calculate and will show you the result.</p>
                 </div>
                 <div className="given-text" id='show-text'></div>
                 <div className="typing-test-area">
+                    <div className="timer-shown" style={{ display: start ? 'flex' : 'none' }}><img src={require('../Image/hourglass.gif')} /> {shownTime}</div>
                     <textarea
                         name="typable-area"
                         value={clientText}
@@ -91,6 +132,7 @@ const TypingTest = () => {
                         id="typable-area"
                         cols="80"
                         rows="6"
+                        placeholder='Type the above generated Quote'
                         disabled={!start}
                     ></textarea>
                 </div>

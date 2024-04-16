@@ -23,6 +23,7 @@ nav {
     font-size: 1.7em;
     font-weight: 700;
     color: #1a3e58;
+    text-shadow: 0px 0px 2px #1a3e58;
 }
 
 .logo h1:hover {

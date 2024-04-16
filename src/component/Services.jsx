@@ -11,7 +11,7 @@ const Services = (props) => {
       <ScrollToTop />
       <div className="services">
         <div className="service-heading">
-          <h1><i class="fa-solid fa-briefcase"></i>Services</h1>
+          <h1><i className="fa-solid fa-briefcase"></i>Services</h1>
         </div>
         <div className="service-content">
           <div className="each-service">

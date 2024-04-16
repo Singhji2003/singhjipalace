@@ -1,25 +1,29 @@
-.services .service-heading{
+.services .service-heading {
     text-align: center;
     color: #081B29
 }
-.services .service-heading  h1 i{
+
+.services .service-heading h1 i {
     font-size: 0.8em;
 }
-.service-heading h1{
+
+.service-heading h1 {
     display: flex;
-    gap:1rem;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
 }
 
-.service-content{
+.service-content {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
-    justify-content: center;
-    margin-top: 1rem;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    margin: 2rem;
 }
-.each-service{
+
+.each-service {
     border-radius: 5px;
     background-color: #1A7E90;
     display: flex;
@@ -29,25 +33,30 @@
     color: white;
     transition: 0.5s;
 }
-.each-service:hover{
+
+.each-service:hover {
     transform: scale(1.03);
 }
-.each-service img{
+
+.each-service img {
     height: 10rem;
     margin: 2rem auto;
+    border-radius: 10px;
 }
-.each-service h1{
+
+.each-service h1 {
     font-size: 1.5em;
     text-align: center;
 }
 
-.each-service p{
+.each-service p {
     width: 20rem;
     font-size: 0.96em;
     text-align: center;
     margin: 1px 10px;
 }
-.each-service a button{
+
+.each-service a button {
     width: 8rem;
     height: 1.7rem;
     font-size: 1.1em;
@@ -58,6 +67,11 @@
     border-radius: 5px;
     font-weight: 500;
 }
-.each-service a{
+
+.each-service a button:hover {
+    box-shadow: 0px 0px 8px white;
+}
+
+.each-service a {
     margin: 15px auto;
 }
